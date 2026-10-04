@@ -1,4 +1,4 @@
-const CACHE='mg-roadmap-v2';
+const CACHE='mg-roadmap-v3';
 const CORE=['./','./index.html','./manifest.json','./icon-192.png','./icon-512.png'];
 
 self.addEventListener('install',event=>{
@@ -13,7 +13,7 @@ self.addEventListener('activate',event=>{
   event.waitUntil(
     caches.keys()
       .then(keys=>Promise.all(
-        keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))
+        keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))
       ))
       .then(()=>self.clients.claim())
   );
@@ -22,8 +22,7 @@ self.addEventListener('activate',event=>{
 self.addEventListener('fetch',event=>{
   if(event.request.mode==='navigate'){
     event.respondWith(
-      fetch(event.request)
-        .catch(()=>caches.match('./index.html'))
+      fetch(event.request).catch(()=>caches.match('./index.html'))
     );
     return;
   }
