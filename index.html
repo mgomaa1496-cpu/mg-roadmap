@@ -1,21 +1,53 @@
-<!doctype html><html lang="ar" dir="rtl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#142331"><link rel="manifest" href="manifest.json">
-<title>MG Roadmap</title>
-<style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f1e9;color:#182631}
-header{background:#142331;color:#fff;padding:26px 18px}header small{opacity:.7;letter-spacing:1px}h1{margin:5px 0 8px}
-main{max-width:720px;margin:auto;padding:15px}.card{background:#fff;border:1px solid #ddd;border-radius:15px;padding:15px;margin-bottom:11px}
-.row{display:flex;align-items:center;justify-content:space-between;gap:12px}h2{font-size:17px;margin:0}p{font-size:13px;color:#64727a;margin:8px 0 0}
-.big{font-size:29px;font-weight:700}.bar{height:8px;background:#e5e6e3;border-radius:20px;overflow:hidden;margin-top:10px}.bar i{display:block;height:100%;background:#66725c}
-.focus{border-right:5px solid #66725c}.flow{font-size:11px;text-align:center;direction:ltr;line-height:1.8;color:#53616b}
-footer{padding:18px;text-align:center;font-size:11px;color:#77838a}
-</style></head><body>
-<header><small>MOHAMED GOMAA</small><h1>Master Roadmap</h1><div>Manufacturing × Technology × Automation × Data</div></header>
-<main>
-<section class="card focus"><div class="row"><div><small>إجمالي الإنجاز</small><div class="big">18%</div></div><b>التركيز الحالي</b></div><div class="bar"><i style="width:18%"></i></div><p><b>LinkedIn → Portfolio → CV</b></p></section>
-<section class="card flow">PROFILE → PROOF → VISIBILITY → NETWORK → SERVICES → PRODUCT → BUSINESS</section>
-<section class="card"><div class="row"><h2>01 — الهوية المهنية</h2><b>55%</b></div><div class="bar"><i style="width:55%"></i></div><p>LinkedIn • Portfolio • CV • Professional Positioning</p></section><section class="card"><div class="row"><h2>02 — إثبات الخبرة</h2><b>35%</b></div><div class="bar"><i style="width:35%"></i></div><p>EP380 • Factory System • Power BI • SQL • Python</p></section><section class="card"><div class="row"><h2>03 — البراند والظهور</h2><b>5%</b></div><div class="bar"><i style="width:5%"></i></div><p>Brand Concept • Business Name • Faceless Content</p></section><section class="card"><div class="row"><h2>04 — الشبكة والمجتمع</h2><b>5%</b></div><div class="bar"><i style="width:5%"></i></div><p>Professional Network • Community • Partnerships</p></section><section class="card"><div class="row"><h2>05 — الخدمات والدخل</h2><b>0%</b></div><div class="bar"><i style="width:0%"></i></div><p>Consulting • Automation • Dashboards • First Clients</p></section><section class="card"><div class="row"><h2>06 — المنتج</h2><b>10%</b></div><div class="bar"><i style="width:10%"></i></div><p>Factory Platform • Validation • MVP • Subscription</p></section><section class="card"><div class="row"><h2>07 — الكيان المستقل</h2><b>0%</b></div><div class="bar"><i style="width:0%"></i></div><p>Team • Recurring Revenue • Saudi/GCC • Partnerships</p></section>
-</main><footer>CONNECTING MANUFACTURING, TECHNOLOGY & DATA.</footer>
-<script>if("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");</script>
-</body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142331">
+  <meta name="description" content="خارطة محمد جمعة المهنية: التصنيع والتقنية والأتمتة والبيانات، من مشاريع المصنع إلى كيان مستقل.">
+  <link rel="manifest" href="manifest.json">
+  <title>خارطة محمد جمعة المهنية</title>
+  <style>
+    :root{color-scheme:light;--ink:#182631;--muted:#64727a;--navy:#142331;--olive:#66725c;--paper:#f4f1e9;--line:#e3e2dc;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Noto Sans Arabic",sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+    header{background:var(--navy);color:var(--white);padding:34px 20px 30px}
+    .wrap{width:min(820px,100%);margin-inline:auto;padding-inline:18px}
+    header small{color:#c6d0d1;letter-spacing:.08em}
+    h1{font-size:clamp(25px,5vw,38px);line-height:1.35;margin:8px 0}
+    header p{color:#d5dedd;max-width:650px;margin:0}
+    main{padding-block:20px 8px}
+    .card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:13px;box-shadow:0 3px 12px #18263108}
+    .focus{border-right:5px solid var(--olive)}
+    .eyebrow{font-size:12px;color:var(--muted);font-weight:700}
+    h2{font-size:18px;line-height:1.5;margin:2px 0 7px}
+    p{margin:6px 0;color:#53616b;font-size:14px}
+    .focus h2{font-size:20px}
+    .route{direction:ltr;text-align:center;color:#53616b;font-size:12px;font-weight:700;line-height:2;word-spacing:3px}
+    .stage-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .stage-head h2{margin:0}
+    .badge{display:inline-block;flex:none;border-radius:999px;padding:3px 10px;background:#edf0e9;color:#485542;font-size:11px;font-weight:700}
+    ul{margin:8px 0 0;padding-right:20px;color:#53616b;font-size:14px}
+    li{padding-block:2px}
+    .note{background:#edf0e9;border-radius:12px;padding:13px 15px;margin-top:12px;color:#39483f;font-size:13px}
+    footer{padding:18px;text-align:center;font-size:11px;color:#77838a}
+    @media (max-width:520px){header{padding-top:27px}.card{padding:15px}.route{font-size:10px}.stage-head{align-items:flex-start}.badge{margin-top:3px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><small>MOHAMED GOMAA</small><h1>من تطوير عمليات المصنع إلى بناء كيان تقني صناعي مستقل</h1><p>Manufacturing × Technology × Automation × Data</p></div></header>
+  <main class="wrap">
+    <section class="card focus" aria-labelledby="focus-title"><span class="eyebrow">الأولوية الحالية</span><h2 id="focus-title">LinkedIn ← CV ← Portfolio</h2><p>ترسيخ هوية مهنية واضحة، ثم عرض الخبرة من خلال حالات عمل حقيقية من المصنع. يبدأ بناء البراند والمحتوى بالتوازي وبخطوات محسوبة.</p><div class="note"><strong>قاعدة التنفيذ:</strong> بناء المشروع المستقل تدريجيًا مع الحفاظ على الوظيفة الحالية والدخل، واختبار كل خطوة قبل التوسع.</div></section>
+    <section class="card" aria-label="تسلسل الخطة"><div class="route">IDENTITY → PROOF → BRAND &amp; CONTENT → NETWORK → SERVICES → PRODUCT → COMPANY</div></section>
+    <section class="card"><div class="stage-head"><h2>01 — الهوية المهنية</h2><span class="badge">الأولوية الآن</span></div><p>تقديم خبرة محمد في نقطة تقاطع التصنيع والتقنية والأتمتة والبيانات، مع رسالة مهنية متسقة عبر المنصات.</p><ul><li>تطوير LinkedIn ثم السيرة الذاتية التنفيذية.</li><li>إعداد Portfolio يعرض النتائج ودور محمد بوضوح.</li></ul></section>
+    <section class="card"><div class="stage-head"><h2>02 — إثبات الخبرة بمشاريع المصنع</h2><span class="badge">عمل تطبيقي</span></div><p>تحويل المشكلات والتحسينات الحقيقية إلى حالات موثقة، مع وصف دقيق لما طُبّق وما يزال قيد التطوير.</p><ul><li><strong>EP380:</strong> Excel Cut List → WOODCUTOPT → Optimization → Machine Prep → BIN Program → EP380 Guided Cutting.</li><li>حالات عن التحول الرقمي للمصنع، مؤشرات الأداء، متابعة العمالة، وتكلفة وخامات الطلبات.</li><li>الخطوة التالية في التكامل: تقليل التجهيز اليدوي، وتجربة Unified Piece ID بين مراحل الإنتاج.</li></ul><div class="note">منصة المصنع الموحدة هدف تطوير مرحلي؛ لا تُعرض الخطة على أنها ERP مكتمل.</div></section>
+    <section class="card"><div class="stage-head"><h2>03 — البراند والمحتوى</h2><span class="badge">بالتوازي</span></div><p>تأسيس اسم تجاري مستقل يشرح كيف تحل التقنية والأتمتة والبيانات مشكلات التصنيع.</p><ul><li>استخدام مشاريع المصنع كحالات عمل ومحتوى مهني قابل لإعادة الاستخدام.</li><li>التركيز على التصوير والشرح من خلف الكواليس دون اشتراط الظهور بالوجه.</li><li>الحفاظ على نطاق متخصص بدل التشتت في محتوى عام أو ترندات.</li></ul></section>
+    <section class="card"><div class="stage-head"><h2>04 — الجمهور والشبكة المهنية</h2><span class="badge">ينمو مع المحتوى</span></div><p>بناء علاقات مع المصانع والمهنيين والشركاء المحتملين من خلال الخبرة المنشورة والحوار حول مشكلات تشغيلية فعلية.</p></section>
+    <section class="card"><div class="stage-head"><h2>05 — الخدمات والدخل الأول</h2><span class="badge">بعد تجهيز العرض</span></div><p>تحويل الخبرة إلى خدمات محددة قابلة للتجربة والقياس، مثل تحسين سير العمل، الأتمتة التشغيلية، ولوحات المتابعة والتحليل.</p><p>الهدف هو اختبار قيمة الخدمة مع عملاء مناسبين وبناء دخل متكرر تدريجيًا.</p></section>
+    <section class="card"><div class="stage-head"><h2>06 — منتج برمجي للمصانع</h2><span class="badge">تطوير تدريجي</span></div><p>استكشاف منصة تربط احتياجات مصنع الأثاث من التصميم ورفع المقاسات إلى الإنتاج والتتبع والتكلفة.</p><ul><li>تحويل التصميم والبيانات إلى مخرجات إنتاج قابلة للاستخدام على الماكينات.</li><li>ربط تعريف القطعة بين المحطات، ثم إضافة تتبع العاملين والجوال والمخزون والتكلفة.</li><li>التحقق من الحاجة مع مستخدمين فعليين قبل توسيع المنتج.</li></ul></section>
+    <section class="card"><div class="stage-head"><h2>07 — كيان مستقل وتوسع</h2><span class="badge">هدف طويل المدى</span></div><p>بناء فريق وعلاقات وشراكات ونموذج دخل مستدام، ثم التوسع في السعودية والخليج على أساس نتائج مثبتة.</p><div class="note">الانتقال من الوظيفة ليس خطوة مبكرة؛ يرتبط باستقرار المشروع والدخل وتقليل المخاطر.</div></section>
+  </main>
+  <footer>CONNECTING MANUFACTURING, TECHNOLOGY &amp; DATA.</footer>
+  <script>if("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");</script>
+</body>
+</html>
